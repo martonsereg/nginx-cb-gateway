@@ -4,4 +4,4 @@
 
 sed -i 's/{nginxport}/'"$PORT"'/g' /etc/nginx/nginx.conf
 
-bash -c $1
+exec "$@"
